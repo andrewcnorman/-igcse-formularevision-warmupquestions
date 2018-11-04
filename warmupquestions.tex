@@ -1,0 +1,235 @@
+%\documentclass[a4paper,12pt]{article}
+\documentclass[14pt]{beamer}
+\usepackage[latin1]{inputenc}
+
+\title[Revision]{Warm-up problems}
+\author{\href{http://andrewcnorman.net/}{\textsc{A.C. Norman}}}
+\date{}
+
+%\usepackage{beamerarticle}
+\usepackage{acn-scientific}
+%\usetikzlibrary{decorations.pathreplacing,
+%  decorations.markings,
+%  decorations.pathmorphing}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{circuits.ee.IEC}
+%\usepackage{cancel}
+
+\usepackage{isotope}
+\usepackage{cancel}
+
+\usetheme{radleykeys}
+
+\usepackage{enumerate}
+
+\setbeamertemplate{enumerate item}{\textbf{\arabic{enumi}}}
+\setbeamertemplate{enumerate subitem}{(\alph{enumii})}
+\setbeamertemplate{enumerate subsubitem}{(\roman{enumiii})}
+
+\setlength{\leftmargini}{0.5em}
+%\leftmarginii
+%\leftmarginiii
+
+\setlength{\unitlength}{1cm}
+
+\begin{document}
+%\maketitle
+
+\begin{frame}{}
+\titlepage
+\vspace*{2em}
+\ccbyncsa
+\end{frame}
+
+% MEANING OF QUESTION LABELS (a copy of this is at the bottom of the document)
+%
+% labels refer to equations
+% e.g. 2.3 means 2=F=ma (see below), 3=looking for a (1=F, 2=m, 3=a)
+%
+% 1) v=d/t
+% 2) F=ma
+% 3) a=Delta v/t (1=a, 2=v, 3=u, 4=t)
+% 4) \rho = m/V
+% 5) W=Fd
+% 6) KE=1/2 mv^2
+% 7) GPE = mgh
+% 8) W=mg
+% 9) p=F/A
+% 10) Q=It
+% 11) V=IR
+% 12) P=IV
+% 13) E=QV
+% 14) v=f\lambda
+% 15) n=sin(big)/sin(small)
+% 16) sin c = 1/n (1=c 2=n)
+% 17) efficiency = useful energy input / total energy output
+% 18) p=\rho g h
+% 19) nuclear equation (1=numbers, 2=alpha, 3=beta, 4=fission, 5=fusion)
+%
+%%%%% TRIPLE ONLY
+% T1) p=mv
+% T2) M=Fd
+% T3) input (primary) voltage / output (secondary) voltage = primary turns / secondary turns
+%     (1=V_p, 2=V_s, 3=N_p, 4=N_s)
+% T4) V_p I_p = V_s I_s (1=V_p, 2=I_p, 3=V_s, 4=I_s)
+
+\begin{frame}{Warm up problems: don't forget ESAU!}
+\begin{enumerate}
+\item\label{2.3} If an object of mass \SI{5}{kg} experiences a force of \SI{3}{N}, what is its acceleration?
+\item\label{3.1} A car's speed increases from \SI{25}{m/s} to \SI{60}{m/s} in \SI{5}{s}.  What is its acceleration?
+\item\label{6.1} If the mass of the car is \SI{1200}{kg}, what is its final kinetic energy at \SI{60}{m/s}?
+\item\label{19} How many protons, neutrons and electrons are there in a \isotope[108][]{Ag^+} ion?
+\item\label{11.2} If a \SI{9}{V} battery is connected to a circuit of resistance \SI{45}{\ohm}, what current flows?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Solutions (1)}
+\begin{enumerate}
+\item\label{2.3} $F=ma$, $a=\dfrac{F}{m}=\dfrac{\SI{3}{N}}{\SI{5}{kg}}=\SI{0.6}{m/s^{2}}$
+\item\label{3.1} $a=\dfrac{\Delta v}{t}=\dfrac{\SI{60}{m/s}-\SI{25}{m/s}}{\SI{5}{s}}=\dfrac{\SI{35}{m/s}}{\SI{5}{s}}=\SI{7}{m/s^{2}}$
+\item\label{6.1} $KE=\frac{1}{2}mv^2=\frac{1}{2}\times\SI{1200}{kg}\times(\SI{60}{m/s})^2=\SI{2160000}{J}$
+\item\label{19} 47 protons, 61 neutrons and 46 electrons
+\item\label{11.2} $V=IR$, $I=\dfrac{V}{R}=\dfrac{\SI{9}{V}}{\SI{45}{\ohm}}=\SI{0.2}{A}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Warm up problems (2): use ESAU!}
+\begin{enumerate}
+\item\label{10.2} If a charge of \SI{2}{C} flows through an ammeter in \SI{5}{s}, what will the current read?
+\item\label{3.2} A car starting at a speed of \SI{5}{m/s} accelerates at \SI{3}{m/s^{2}} for \SI{12}{s}.  What is its final speed?
+\item\label{10.1} If a battery supplies a current of \SI{0.8}{A} for  \SI{28}{s}, what charge has flowed?
+\item\label{4.3} A pure gold ring has mass \SI{15}{g} and gold has density \SI{19.6}{g/cm^{3}}.  What is its volume?
+\item\label{10.3} If a lightbulb has a current of \SI{1.2}{A} flowing through it, how long will it take for \SI{90}{C} of charge to flow through it?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Solutions (2)}
+\begin{enumerate}
+\item $I=\dfrac{Q}{t}=\dfrac{\SI{2}{C}}{\SI{5}{s}}=\SI{0.4}{A}$
+\item $a=\dfrac{\Delta v}{t}$, $\Delta v = at = \SI{3}{m/s^{2}}\times\SI{12}{s} = \SI{36}{m/s}$\\
+$\text{Starting speed} = \SI{5}{m/s}$, so $\text{final speed}=\SI{41}{m/s}.$
+\item $Q=It=\SI{0.8}{s}\times\SI{28}{s}=\SI{22.4}{C}$
+\item $\rho=\dfrac{m}{V}$, $V=\dfrac{m}{\rho}=\dfrac{\SI{15}{g}}{\SI{19.6}{g/cm^{3}}}=\SI{0.77}{cm^{3}}$
+\item $Q=It$, $t=\dfrac{Q}{I}=\dfrac{\SI{90}{C}}{\SI{1.2}{A}}=\SI{75}{s}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Warm up problems (3): use ESAU!}
+\begin{enumerate}
+\item\label{1.1} A car drives 82.0 miles in 3~h 46~min.  What is its average speed
+\begin{enumerate}
+\item in mph?
+\item in m/s? [Hint: 1 mile = 1600 m]
+\end{enumerate}
+\item\label{3.1} A Nissan LEAF accelerates to \SI{27.5}{m/s} from rest in \SI{11.5}{s}.  What is its acceleration?
+\item An electric car charging point supplies a voltage of \SI{394}{V} and a current of \SI{104}{A}.
+\begin{enumerate}
+\item\label{11.3} What is the resistance of the car charging (connected to the charging point)?
+\item\label{10.1} The car is connected for \SI{29}{min}.  How much charge has flowed?
+\end{enumerate}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Solutions (3)}
+\begin{enumerate}
+\item \begin{enumerate}
+\item $v=\dfrac{d}{t}=\dfrac{\SI{82.0}{mile}}{\SI{3}{h}+\frac{46}{60}~\si{h}}=\SI{21.8}{mph}$
+\item $21.8~\dfrac{\si{mile}}{\si{h}}\times\dfrac{\SI{1600}{m}}{\si{mile}}\times\dfrac{\SI{1}{h}}{\SI{60}{min}}\times\dfrac{\SI{1}{min}}{\SI{60}{s}}=\SI{9.7}{m/s}$
+\end{enumerate}
+\item $a=\dfrac{\Delta v}{t}=\dfrac{\SI{27.5}{m/s}}{\SI{11.5}{s}}=\SI{2.39}{m/s^{2}}$
+\item \begin{enumerate}
+\item $V=IR$, $R=\dfrac{V}{I}=\dfrac{\SI{394}{V}}{\SI{104}{A}}=\SI{3.79}{\ohm}$
+\item $Q=It=\SI{29}{min}\times\dfrac{\SI{60}{s}}{\si{min}}\times\SI{104}{A}=\SI{181000}{C}$
+\end{enumerate}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Warm up problems (4): use ESAU!}
+\vspace*{-0.8em}\begin{enumerate}
+\item\label{17.1} A solar panel generates \SI{300}{J} of electrical energy for every \SI{1400}{J} of light energy.  What is its efficiency?
+\item\label{11.3} A flashlamp bulb operates at a voltage of \SI{2.5}{V} and a current of \SI{0.3}{A}.  What is its resistance?
+\item\label{2.1} A Nissan LEAF has mass \SI{1557}{kg}.  If it accelerates at \SI{2.3}{m/s^{2}}, what is the unbalanced force on it?
+\item\label{8.1} A man has mass of \SI{77.5}{kg}.  What is his weight on the Moon (gravitational field strength = \SI{1.63}{N/kg})?
+\item\label{15.2} A laser beam entering water (refractive index = 1.33) refracts at \SI{12}{\degree} to the normal. What was the angle of incidence?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Solutions (4)}
+\vspace*{-0.8em}\begin{enumerate}
+\item\label{17.1} $\text{efficiency} = \dfrac{\text{useful energy out}}{\text{total energy in}}\times100\% = \dfrac{\SI{300}{J}}{\SI{1400}{J}}\times100\% = 21.4\%$
+\item\label{11.3} $V=IR$, $R=\dfrac{V}{I}=\dfrac{\SI{2.5}{V}}{\SI{0.3}{A}}=\SI{8.33}{\ohm}$
+\item\label{2.1} $F=ma = \SI{1557}{kg}\times\SI{2.3}{m/s^{2}}=\SI{3580}{N}$
+\item\label{8.1} $W=mg=\SI{77.5}{kg}\times\SI{1.63}{N/kg}$
+\item\label{15.2} $n=\dfrac{\sin(\text{big})}{\sin(\text{small})}$, $\sin(\text{big})=n \sin(\text{small})=1.33\times\sin(\SI{12}{\degree})=0.27652\ldots$\\
+big$=\sin^{-1}(0.27652\ldots)=\SI{16.1}{\degree}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Warm up problems (5): use ESAU!}
+\vspace*{-0.8em}\begin{enumerate}
+\item\label{15.3} A light beam hits glass (refractive index = 1.52) at an angle of incidence of \SI{48}{\degree}.  What is the angle of refraction?
+\item\label{5.2} A man pushed a car \SI{8}{m}, doing \SI{1800}{J} of work in the process.  What force did he push the car with?
+\item\label{10.2} \SI{78}{C} of charge flow through an ammeter in \SI{32.5}{s}.  What current does the ammeter read?
+\item\label{6.1} A marble of mass \SI{25}{g} rolls at \SI{0.6}{m/s} along a track.  What is its kinetic energy?
+\item\label{13.1} \SI{45}{C} of electrical charge leave a \SI{9}{V} battery.  How much energy does this charge carry?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Solutions (5)}
+\vspace*{-0.8em}\begin{enumerate}
+\item\label{15.3} $n=\dfrac{\sin(\text{big})}{\sin(\text{small})}$, $\sin(\text{small})=\dfrac{\sin(\text{big})}{n}=\dfrac{\sin(\SI{48}{\degree})}{1.52}=0.488911\ldots$\\
+small=$\sin^{-1}(0.488911\ldots)=\SI{29.3}{\degree}$
+\item\label{5.2} $W=Fd$, $F=\dfrac{W}{d}=\dfrac{\SI{1800}{J}}{\SI{8}{m}}=\SI{225}{N}$
+\item\label{10.2} $Q=It$, $I=\dfrac{Q}{t}=\dfrac{\SI{78}{C}}{\SI{32.5}{s}}=\SI{2.4}{A}$
+\item\label{6.1} $\text{KE}=\frac{1}{2}mv^{2}=\frac{1}{2}\times\SI{0.025}{kg}\times(\SI{0.6}{m/s})^2=\SI{4.5e-3}{J}$
+\item\label{13.1} $E=QV=\SI{45}{C}\times\SI{9}{V}=\SI{405}{J}$
+\end{enumerate}
+\end{frame}
+
+\end{document}
+
+%A rough and ready way to get random(ish) numbers in a bash shell (GNU/Linux)
+%shuf -i 1-19 -n 1
+%shuf -i 1-3 -n 1
+
+\begin{frame}{Warm up problems (X): use ESAU!}
+\vspace*{-0.8em}\begin{enumerate}
+\item\label{X} 
+\item\label{X} 
+\item\label{X} 
+\item\label{X} 
+\item\label{X} 
+\end{enumerate}
+\end{frame}
+
+% MEANING OF QUESTION LABELS
+%
+% labels refer to equations
+% e.g. 2.3 means 2=F=ma (see below), 3=looking for a (1=F, 2=m, 3=a)
+%
+% 1) v=d/t
+% 2) F=ma
+% 3) a=Delta v/t (1=a, 2=v, 3=u, 4=t)
+% 4) \rho = m/V
+% 5) W=Fd
+% 6) KE=1/2 mv^2
+% 7) GPE = mgh
+% 8) W=mg
+% 9) p=F/A
+% 10) Q=It
+% 11) V=IR
+% 12) P=IV
+% 13) E=QV
+% 14) v=f\lambda
+% 15) n=sin(big)/sin(small)
+% 16) sin c = 1/n (1=c 2=n)
+% 17) efficiency = useful energy input / total energy output
+% 18) p=\rho g h
+% 19) nuclear equation (1=numbers, 2=alpha, 3=beta, 4=fission, 5=fusion)
+%
+%%%%% TRIPLE ONLY
+% T1) p=mv
+% T2) M=Fd
+% T3) input (primary) voltage / output (secondary) voltage = primary turns / secondary turns
+%     (1=V_p, 2=V_s, 3=N_p, 4=N_s)
+% T4) V_p I_p = V_s I_s (1=V_p, 2=I_p, 3=V_s, 4=I_s)
